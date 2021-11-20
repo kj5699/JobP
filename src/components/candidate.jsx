@@ -18,19 +18,14 @@ const Candidate = () => {
     const selectHander =(e,type)=>{
         e.preventDefault()
         context.updateCandidateStatus(candidate.id,type)
+        navigate(-1)
     }
     console.log(candidate)
     return (
         <div className='candidateWrapper'>
-            <div className='homepageHeader'>
-                <div className='searchBar'>
-                    <h3>Candidate Details</h3>
-                </div>
-                <div className='searchTab'>
+            <div className='canditateHeader'>
+                <h3>Candidate Details</h3>
                 <button onClick={() => navigate(-1)}>Go back</button>
-                    
-                </div>
-                
             </div>
             <div className='container'>
             
@@ -46,6 +41,13 @@ const Candidate = () => {
                         <button onClick={(e)=>selectHander(e,'shortlisted')}> Shortlist</button>
                         <button onClick={(e)=>selectHander(e,'rejected')}> Reject</button>
                     </div>
+                    {candidate?.currentStatus==='shotlisted' && 
+                        <p>The candidate is selected</p>
+                    }
+                    {candidate?.currentStatus==='rejected' && 
+                        <p>The candidate is selected</p>
+                    }
+
                 
                 </div>
             </div>

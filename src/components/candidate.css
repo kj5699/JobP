@@ -1,7 +1,6 @@
 .candidateWrapper{
     width: 100%;
     
-
 }
 .candidateWrapper >.container{
 
@@ -10,6 +9,16 @@
     justify-content: center;
     padding: 1rem;
 
+}
+.candidateWrapper>.canditateHeader{
+    display: flex;
+    justify-content: space-evenly;
+    height:3rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+.candidateWrapper>.canditateHeader >h3,.candidateWrapper>.canditateHeader >button{
+    margin: auto 1rem;
 }
 .candidateWrapper >.container>.candidate-image{
     margin:auto 5rem;

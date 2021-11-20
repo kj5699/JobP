@@ -11,8 +11,12 @@ export const Card = ({candidate}) => {
             <div className='card-body'>
                 <h3>{candidate?.name}</h3>
             </div>
-            <NavLink to={'/'+ candidate.id}> View More</NavLink>
-
+            <div className='card-footer'>
+                <NavLink to={'/'+ candidate.id}> Show Details</NavLink>
+                <h6>
+                    {candidate.currentStatus!=='all'&&candidate.currentStatus!==null?candidate.currentStatus:null}
+                </h6>
+            </div>
         </div>
     )
 }
