@@ -1,0 +1,43 @@
+.candidateWrapper{
+    width: 100%;
+    
+
+}
+.candidateWrapper >.container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+
+}
+.candidateWrapper >.container>.candidate-image{
+    margin:auto 5rem;
+    min-width:300px;
+}
+.candidateWrapper >.container>.candidate-image >img{
+    width:100%;
+    height: 100%;
+    
+
+}
+
+.candidateWrapper >.container>.candidate-body{
+    margin:auto 5rem;
+} 
+
+button{
+    height:32px;
+    width: 120px ;
+    margin-right: 1rem;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    
+}
+
+button ::after,  button :hover{
+    background-color: rgb(56, 56, 56);
+
+}
